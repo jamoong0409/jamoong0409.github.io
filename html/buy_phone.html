@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>중고폰 구매하기</title>
+  <link rel="stylesheet" href="../css/sell-phone.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <div class="wrap">
+        <a href="#" class="menu_small"><i class="fas fa-bars"></i></a>
+    
+        <div class="logo"><a href="../index.html"><img src="../img/logo.png" alt="" width="100px" height="100px"></a></div>
+    
+        <div class="search_bar">
+            <form class="for" action="#">
+            <input type="text" placeholder="기종 검색" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    
+        <div class="log_in">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="menu">
+      <li><a href="./buy_phone.html">구입</a></li>
+      <li><a href="./sell_phone.html">판매</a></li>
+      <li><a href="./pan.html">게시판</a></li>
+      <li><a href="./mu.html">고객문의</a></li>
+    </ul>
+<!-- nav_bar -->
+    <div class="nav">
+    <a href="./buy_phone.html">구입</a>
+    <a href="./sell_phone.html">판매</a>
+    <a href="./pan.html">게시판</a>
+    <a href="./mu.html">고객문의</a>
+    </div>
+</header>
+
+  <div class="wrap">
+    <div class="wrap-container">
+      <nav class="container-nav">
+        <ul>
+          <li><a href="#">전체</a></li>
+          <li><a href="#">삼성</a></li>
+          <li><a href="#">애플</a></li>
+          <li><a href="#">태블릿</a></li>
+        </ul>
+        
+      </nav>
+    </div>
+ </div>
+
+ <div class="sub-wrap">
+   <div class="sub-container">
+    <h3 style="font-size: 13px;">
+      총 5,226건/1페이지 
+    </h3>
+    <div class="form-page">
+      <form action="#" method="get">
+    <!--<select name="usedPhone" id="">
+          <option value="total">전체그룹</option>
+          <option value="usednara">중고폰나라</option>
+          <option value="andong">안동지사</option>
+          <option value="ansanj">안산지사</option>
+          <option value="asan">아산지사</option>
+          <option value="bj">병접지사</option>
+          <option value="busan">부산지사</option>
+          <option value="cw">창원지사</option>
+          <option value="daegub">대구북구지사</option>
+          <option value="bundang">성남분당지사</option>
+          <option value="dt">동탄지사</option>
+        </select>-->    
+        <input type="text" placeholder="검색어 입력" name="click">
+        <button tpye="submit" id="click"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+
+   
+   
+   </div>
+ </div>
+  
+ <section class="list">
+  <div class="container">
+
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안산중앙지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/아이폰7.jpeg" alt="iphone7" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">애플</small>
+          <a href="#" style="font-size: 19px; color: black;">아이폰7</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "32GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "블랙&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>100,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안산중앙지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/아이폰5S.jpeg" alt="iphone" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">애플</small>
+          <a href="#" style="font-size: 19px; color: black;">아이폰5S</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "16GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "골드&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>50,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            원주지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/아이폰13Pro.jpeg" alt="아이폰" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">애플</small>
+          <a href="#" style="font-size: 19px; color: black;">아이폰13 프로</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "256GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "시에라 블루&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>지점문의</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안양범계지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/아이폰12미니.jpeg" alt="아이폰미니" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">애플</small>
+          <a href="#" style="font-size: 19px; color: black;">아이폰12미니</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "64GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "퍼플&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>550,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안양범계지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시노트8.jpeg" alt="갤럭시노트8" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시 노트8</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "64GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "블랙&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>110,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안산선부지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시A32.jpeg" alt="갤럭시A32" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시 A32</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "64GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "퍼플&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>200,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안산중앙지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시A30.jpeg" alt="갤럭시A30" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시A30</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "32GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "블랙&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>110,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안산중앙지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시플립3.jpeg" alt="갤럭시플립3" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시플립3</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "256GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "크림&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>670,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안양범계지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시S20+.jpeg" alt="갤럭시s20+" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시 S20+</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "256GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "블루&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>450,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            원주지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/아이폰11.jpeg" alt="아이폰11" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">애플</small>
+          <a href="#" style="font-size: 19px; color: black;">아이폰11</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "64GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "퍼플&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>지점문의</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안산중앙지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시A31.jpeg" alt="갤럭시A31" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시A31</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "64GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "화이트&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>150,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            군포산본지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/ss울트라.jpeg" alt="ss울트라" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">S22울트라</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "256GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "블랙&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>1,150,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            천안신부지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/A315.jpg" alt="A315" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">A315</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "64GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "블랙&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>지점문의</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            원수지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/갤럭시A51.jpg" alt="갤럭시A51" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">갤럭시A51</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "65GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "큐브 블랙&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>지점문의</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            대전유성지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/아이폰se.jpg" alt="아이폰se" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">아이폰SE</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "128GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "화이트&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>210,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    <article>
+      <div class="small-container">
+        <div class="location">
+  
+          <span class="span-location">
+            <i class="fa-solid fa-location-dot"></i>
+            안양범계지사
+          </span>
+        </div>
+        <div> 
+          <a href="#" class="container-img">
+            <img src="../images/노트10플러스.jpg" alt="노트10플러스" width="200" height="250">
+          </a>
+         
+        </div>
+        <h6>
+          <small class="small-title">삼성</small>
+          <a href="#" style="font-size: 19px; color: black;">노트10플러스</a>
+        </h6> 
+        <p style="font-size: 13px;">
+          <i class="fa-solid fa-database"></i>
+          "256GB&nbsp;"
+          <i class="fa-solid fa-paintbrush"></i>
+          "아우라 글로우&nbsp;"
+        </p>
+      
+        <div class="phone-price">
+          <h5>360,000원</h5>
+        </div>
+      </div>
+    
+      
+    </article>
+    
+   
+
+
+    </div>
+
+  </section>
+ 
+  <!--Pagination-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous" style="color: black;">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">1</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">2</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">3</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">4</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">5</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">6</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">7</a></li>
+      <li class="page-item"><a class="page-link" href="#" style="color: black;">8</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next" style="color: black;">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--footer-->
+  <footer id="contact">
+    <div class="container">
+      <div class="footA">
+        <h2>중고폰나라</h2>
+        <p>경기도 고양시 일산동구 마두동 이젠컴퓨터학원
+        <br>
+        <a href="https://is.ezenac.co.kr">https://is.ezenac.co.kr</a>
+        </p>
+        
+      <nav class="footD">
+        <ul>
+          <li><a href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="" title="facebook"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="" title="google"><i class="fab fa-google-plus"></i></a></li>
+          <li><a href="" title="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="" title="youtube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </nav>
+      </div>
+      
+      <div class="footB">
+        <div>
+          <h3>역할 분담</h3>
+          <ul>
+            <li><a href="#">권진현 : 메인페이지</a></li>
+            <li><a href="#">안민욱 : 고객 문의</a></li>
+            <li><a href="#">안병진 : 구매, 판매</a></li>
+            <li><a href="#">윤성훈 : 게시판, 리뷰</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">구입</a></li>
+            <li><a href="#">판매</a></li>
+            <li><a href="#">게시판, 리뷰</a></li>
+            <li><a href="#">고객 문의</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+ 
+
+
+
+
+ <script src="https://kit.fontawesome.com/1d577385a0.js" crossorigin="anonymous"></script>
+</body>
+</html>

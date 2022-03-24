@@ -1,0 +1,560 @@
+/*기본색상*/
+@import url(reset.css);
+
+:root {
+  --main-color: rgb(255, 108, 44);
+  --dark-main-color: #ce6e00;
+  --text-bright-color: #fff;
+  --icon-color: #fff;
+  --icon-bk-color: #ddd;
+  --gray-color: #ddd;
+  --large-width: 1200px;
+  --middle-width: 768px;
+}
+
+body {
+  margin: auto;
+  font-family: "나눔고딕", sans-serif;
+}
+header {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  line-height: 70px;
+  padding: 0 20px;
+}
+
+.search_bar {
+  position: relative;
+}
+ 
+.search_bar input {
+  border: 3px solid var(--main-color);
+  width: 300px;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+
+.wrap .search_bar button {
+  position: absolute;
+  bottom: 0;
+  right: 1px;
+  border-radius: 3%;
+  padding: 10px 20px;
+
+  background-color: var(--main-color);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrap .search_bar input:focus {
+  outline: none;
+}
+
+.log_in {
+  display: block;
+}
+
+.log_in ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.log_in a {
+  display: block;
+  padding: 15px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.log_in a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.menu {
+  background-color: var(--main-color);
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  padding: 8px 12px;
+  border-bottom: 1px solid white;
+}
+
+.menu a {
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* nav bar */
+.nav {
+  background-color: var(--main-color);
+  max-width: 100%;
+  margin: auto;
+}
+
+.nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* 큰 화면 */
+@media screen and (min-width: 768px) {
+  header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--large-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .log_in ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .log_in a {
+    font-size: 14px;
+  }
+  .menu_small,
+  .menu {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .log_in {
+    font-size: 14px;
+  }
+  .menu_small {
+    outline: none;
+    border: none;
+    color: var(--main-color);
+    background-color: white;
+    padding: 0;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .menu_small:hover {
+    opacity: 0.3;
+  }
+  .search_bar {
+    display: none;
+  }
+  .nav {
+    display: none !important;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    padding: 0;
+  }
+  .menu a {
+    color: white;
+  }
+  .menu a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-bright-color);
+  }
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .menu.active {
+    display: flex;
+  }
+}
+
+/*구매하기 navbar*/
+
+.wrap {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.container-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-nav a {
+  display: inline-block;
+  padding: 13px 30px;
+  margin: 20px;
+  text-decoration: none;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  color: black;
+}
+
+.container-nav a:hover {
+  border: 3px solid rgba(255, 108, 44);
+  color: rgba(255, 108, 44);
+}
+
+.sub-wrap {
+  margin: auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.sub-wrap .sub-container {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.form-page input {
+  width: 100px;
+}
+
+.form-page button {
+  position: absolute;
+  background-color: white;
+  border: none;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+/*table 만들기 */
+
+.list .container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.sell-img img {
+  width: 200px;
+  height: 150px;
+}
+
+.list article {
+  flex: 1 1 200px;
+  margin: 13px;
+}
+
+.container .small-container {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.small-title {
+  display: inline-block;
+  color: #555;
+  font-weight: 300 !important;
+  line-height: 1.2;
+  padding: 0 0.4rem 0 0.2rem;
+  margin-right: 5px;
+  font-size: 0.75rem;
+  border-right: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.list .container-img {
+  margin-left: 30px;
+}
+
+.list .span-location {
+  margin-left: 33px;
+  display: inline-block;
+  background-color: rgba(255, 108, 44);
+  border: 1px solid;
+  width: 120px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: white;
+  padding: 3px;
+}
+
+article h6,
+p {
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.phone-price {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-top: 2px dotted #ddd;
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .list article {
+    float: left;
+    width: 50%;
+  }
+
+  .pagination .first,
+  .pagination .last {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    text-align: center;
+  }
+
+  .wrap li a {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .list article {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*sell_phone table*/
+
+section .sell-table {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.sell-table a {
+  text-decoration: none;
+  color: black;
+}
+
+.sell-table article {
+  flex: 1 1 200px;
+  width: 250px;
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.sell-h2 {
+  padding: 10px;
+  margin: 5px;
+}
+
+.sell-img {
+  padding: 20px;
+}
+
+.sell-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.sell-price h2 {
+  border: 1px solid #ddd;
+  padding: 7px 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 108, 44);
+  color: white;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.sell-table .avg-price {
+  padding: 5px;
+  border: 2px solid #ddd;
+  width: 100px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  section .sell-table {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .sell-table a {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sell-table a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*pagination*/
+.pagination {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* footer: 주소, sns, 서브메뉴 */
+footer {
+  background-color: var(--dark-main-color);
+  color: var(--text-bright-color);
+}
+
+footer .container {
+  padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .footA {
+    flex: 0 0 40%;
+  }
+  .footB {
+    flex: 0 0 60%;
+  }
+}
+
+.footA {
+  margin-bottom: 30px;
+}
+
+.footA h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  letter-spacing: 00.2em;
+}
+
+.footA p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footA a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footB div {
+  margin-bottom: 20px;
+}
+
+.footB h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid currentColor;
+}
+
+.footB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footB a {
+  display: block;
+  padding: 5px;
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footB a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .footB {
+    display: flex;
+  }
+  .footB div {
+    flex: 1;
+  }
+  .footB div:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.footD {
+  margin-top: 20px;
+}
+
+.footD ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footD a {
+  display: block;
+  margin-right: 8px;
+  padding: 0;
+  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid currentColor;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.footD a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
